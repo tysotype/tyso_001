@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/tysonedw/public_html/tyso/wp-content/themes/tyso_001
+    - /bin/cp -R * $DEPLOYPATH
