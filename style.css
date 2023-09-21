@@ -1,0 +1,851 @@
+/*
+Theme Name: tyso_001
+Theme URI: 
+Author: 
+Author URI: 
+Description: 
+Requires at least: 6.0
+Tested up to: 6.2.2
+Requires PHP: 5.7
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentytwentythree
+Text Domain: tyso_001
+Tags: blog, news, portfolio, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, sticky-post, threaded-comments, translation-ready, 
+*/
+
+/* 
+Neue Haas Grotesk Display Pro 15 Ultra Thin
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 100;
+font-style: normal;
+Neue Haas Grotesk Display Pro 16 Ultra Thin Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 100;
+font-style: italic;
+Neue Haas Grotesk Display Pro 25 Thin
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 200;
+font-style: normal;
+Neue Haas Grotesk Display Pro 26 Thin Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 200;
+font-style: italic;
+Neue Haas Grotesk Display Pro 35 Extra Light
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 300;
+font-style: normal;
+Neue Haas Grotesk Display Pro 36 Extra Light Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 300;
+font-style: italic;
+Neue Haas Grotesk Display Pro 45 Light
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: normal;
+Neue Haas Grotesk Display Pro 46 Light Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Neue Haas Grotesk Display Pro 55 Roman
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Neue Haas Grotesk Display Pro 56 Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 500;
+font-style: italic;
+
+Neue Haas Grotesk Display Pro 65 Medium
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Neue Haas Grotesk Display Pro 66 Medium Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 600;
+font-style: italic;
+Neue Haas Grotesk Display Pro 75 Bold
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 700;
+font-style: normal;
+Neue Haas Grotesk Display Pro 76 Bold Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 700;
+font-style: italic;
+Neue Haas Grotesk Display Pro 95 Black
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 900;
+font-style: normal;
+Neue Haas Grotesk Display Pro 96 Black Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 900;
+font-style: italic;
+Neue Haas Grotesk Text Pro 55 Roman
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+Neue Haas Grotesk Text Pro 56 Italic
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Neue Haas Grotesk Text Pro 65 Medium
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Neue Haas Grotesk Text Pro 66 Medium Italic
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 500;
+font-style: italic;
+Neue Haas Grotesk Text Pro 75 Bold
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 700;
+font-style: normal;
+Neue Haas Grotesk Text Pro 76 Bold Italic
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 700;
+font-style: italic;
+ */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: "neue-haas-grotesk-display", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important; */
+
+  /* font-family: "neue-haas-grotesk-display", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important; */
+
+  font-family: "neue-haas-grotesk-text", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+
+  /* font-family: "neue-haas-grotesk-text", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: italic !important; */
+
+  letter-spacing: -.02em;
+
+}
+
+a {
+  text-decoration: none !important;
+  transition: all .3s ease;
+}
+
+a:hover {
+  filter: brightness(103%) saturate(100%) contrast(100%);
+  /* transition: 0.3s; */
+}
+
+video::-internal-media-controls-download-button {
+  display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+  /* overflow: hidden; */
+}
+
+video::-webkit-media-controls-panel {
+  /* width: calc(100% + 30px); */
+}
+
+
+.tag-isdisabled {
+  /* cursor: not-allowed; */
+  opacity: 0.5;
+}
+
+.tag-isdisabledd {
+  /* color: currentColor; */
+  /* display: inline-block; */
+  /* For IE11/ MS Edge bug */
+  /* pointer-events: none; */
+  /* text-decoration: none; */
+}
+
+.tag-isdisabledd .pfv_vidBox a {
+  /* color: currentColor; */
+  /* display: inline-block; */
+  /* For IE11/ MS Edge bug */
+  /* pointer-events: all !important; */
+  /* text-decoration: none; */
+}
+
+
+
+
+.wp-block-post-title {
+  font-size: 1em !important;
+}
+
+.ty-cat-link a {
+  /* color: grey !important; */
+  opacity: .6;
+  text-decoration: none !important;
+}
+
+
+.t-nav a:hover,
+.taxonomy-category a,
+.wp-block-post-terms__separator {
+  opacity: .6;
+}
+
+.ty-cat-link a:hover,
+.taxonomy-category a:hover {
+  opacity: 1;
+}
+
+
+.t-nav a::before {
+  content: "☐ ";
+  font-size: 1.4em;
+}
+
+.t-nav .current-menu-item a {
+  color: #FFFFFF !important;
+  opacity: 1;
+}
+
+.t-nav .current-menu-item a::before {
+  content: "☒ ";
+  font-size: 1.4em;
+}
+
+
+.ty-social a::before {
+  content: "↗ " !important;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: 200;
+  vertical-align: -22%;
+}
+
+.ty-internal-link a::before {
+  content: "→ " !important;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: 200;
+  vertical-align: -6%;
+}
+
+.wp-site-blocks,
+.wp-site-blocks:before {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+.wp-block-navigation .wp-block-navigation-item {
+  line-height: .9;
+}
+
+.wp-block-navigation ul,
+.wp-block-navigation ul li {
+  /* margin-bottom: -0.9em; */
+}
+
+
+
+.wp-block-post-featured-image {
+  /* margin-top: 0 !important; */
+}
+
+
+
+.intro-text {
+  width: 17em !important;
+  z-index: 3 !important;
+  position: relative !important;
+  margin-top: -.2em !important;
+}
+
+.intro-text-new {
+  width: 38em !important;
+  z-index: 3 !important;
+  position: absolute !important;
+  padding-top: 15vh;
+  padding-left: 0;
+  margin-top: -0.2em !important;
+  float: left;
+  pointer-events: none;
+
+}
+
+.tag-mask {
+  -webkit-mask-image: url(/wp-content/themes/tyso_001/assets/images/T.svg);
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: auto;
+
+  mask-image: url(/wp-content/themes/tyso_001/assets/images/T.svg);
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+}
+
+.introvid,
+.introvid video {
+  height: 75vh !important;
+  position: absolute;
+  z-index: 4 !important;
+}
+
+.introvid {
+  width: 60vh;
+  /* width: 35%; */
+  /* margin-top: 2vh !important; */
+  margin-bottom: 32vh !important;
+  margin-right: 0 !important;
+  background: #ffffff;
+  height: 80vh;
+  /* mix-blend-mode: screen; */
+
+  right: 1vw;
+  mix-blend-mode: luminosity;
+  mix-blend-mode: exclusion;
+
+  position: fixed;
+  z-index: 4 !important;
+  /* animation-name: example;
+  animation-duration: 4s; */
+}
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+} */
+
+.introvid video {
+  opacity: 0;
+  animation-name: t-trans;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+
+
+@keyframes t-trans {
+  from {
+    /* filter: brightness(23); */
+    opacity: 0;
+
+  }
+
+  to {
+    /* filter: brightness(1); */
+    opacity: 1;
+
+  }
+}
+
+
+
+.tytop {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(6, 6, 6, 1) 80%);
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(132, 132, 132, 1) 31%, rgba(86, 86, 86, 1) 45%, rgba(43, 43, 43, 1) 61%, rgba(21, 21, 21, 1) 73%, rgba(6, 6, 6, 1) 90%);
+
+  /* background: rgb(255, 255, 255); */
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(187, 187, 187, 1) 12%, rgba(155, 155, 155, 1) 19%, rgba(122, 122, 122, 1) 28%, rgba(86, 86, 86, 1) 41%, rgba(43, 43, 43, 1) 56%, rgba(21, 21, 21, 1) 68%, rgba(6, 6, 6, 1) 80%); */
+}
+
+.introvid video {
+  background: blue;
+  object-fit: cover;
+}
+
+.tyso-logo {
+  /* display: none; */
+}
+
+.three {
+  font-size: 1.04em;
+}
+
+.lettert {
+  position: fixed;
+  right: 0;
+  z-index: 2 !important;
+  width: 5vw;
+  padding: 1em;
+  margin: 2em;
+  mix-blend-mode: overlay;
+}
+
+.p1 {
+  height: 100vh;
+}
+
+.tyso-title {
+  padding-top: 1.4rem;
+  position: absolute !important;
+  z-index: 1;
+
+  /* display: none; */
+}
+
+.tyso-title h1,
+.introtext h1 {
+  color: lightgray;
+}
+
+.tyso-title h1,
+.introtext h1 {
+  /* font-family: NeueHaasGroteskText W02; */
+  font-size: calc((1vw *10) + (1vh * 1));
+  font-weight: 500;
+  line-height: .9;
+}
+
+.ghostkit-grid {
+  padding: 10vw 36px;
+}
+
+.ghostkit-grid video {
+  margin-bottom: 2em;
+  border-radius: 0.2em;
+}
+
+h2 {
+  /* font-family: NeueHaasGroteskText W02; */
+  font-size: calc((17.7vw) - 10px);
+  font-weight: 500;
+  line-height: .9;
+}
+
+h3 {
+  /* font-family: NeueHaasGroteskText W02; */
+  font-size: 8vw;
+  font-weight: 500;
+  line-height: .9;
+  margin: 0;
+}
+
+
+
+.introtext {
+  position: absolute !important;
+  float: left;
+  width: 80vw;
+  margin-bottom: 1.6em !important;
+  bottom: 0;
+  z-index: 1;
+  /* display: none; */
+
+  /* font-family: "neue-haas-grotesk-display", sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.intropara {
+  color: lightgray;
+  /* font-family: NeueHaasGroteskText W02; */
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 1.1;
+  padding-top: 8vh;
+
+  /* height: 100vh; */
+
+
+  color: #ffffff;
+  font-family: 'Inter';
+  font-size: 3.4em;
+  font-weight: 400;
+  line-height: 1;
+  /* padding-top: 30vh; */
+  padding-bottom: 20vh;
+
+  /* height: 100vh; */
+  letter-spacing: -.02em;
+}
+
+.intropara p {
+  margin-bottom: .5em;
+}
+
+.intropara p+p {
+  text-indent: 2.8em;
+
+}
+
+.thework {
+  height: 60vh;
+  padding-top: 14vh;
+}
+
+.tyso,
+.intro-text {
+  padding-top: 15vh;
+}
+
+.tyso,
+.t-nav {
+  padding-left: 2.4rem;
+}
+
+.tyso {
+  margin-top: 0 !important;
+  position: fixed;
+  width: 4rem;
+  left: 0;
+}
+
+.t-nav {
+  position: fixed !important;
+  bottom: 0;
+  padding-bottom: 4rem;
+  z-index: 20;
+  display: none;
+}
+
+.wp-post-image {
+  border-radius: 25px;
+}
+
+.ps-the-hero {
+  position: relative;
+}
+
+
+.ps-the-hero .wp-post-image {
+  border-radius: 0px 0px 0px 25px;
+}
+
+.ty-body li {
+  /* padding-left: 1em !important; */
+
+  /* margin-top: -4em; */
+
+}
+
+
+.main-posts li:nth-of-type(3) {
+  flex-grow: 1;
+
+}
+
+.main-posts li:nth-of-type(3).tag-width-75 .wp-post-image {
+  border-radius: 0px 0px 0px 25px;
+  /* margin-block-start: 0 !important; */
+}
+
+/* .main-posts li:nth-of-type(2).tag-width-75 figure {
+  margin: 0 !important;
+}
+
+.main-posts li:nth-of-type(2).tag-width-75 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-block-start: 0 !important;
+}
+
+.main-posts li:nth-of-type(2).tag-width-75 body {
+  margin-block-start: 0rem !important;
+} */
+
+.ty-body {
+  margin-top: 0 !important;
+  /* display: none; */
+}
+
+.ty-body ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1.4rem;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  /* flex-direction: column; */
+  gap: 2em;
+  /* gap: 10px 20px; 
+  row-gap: 10px;
+  column-gap: 20px; */
+}
+
+
+
+/* div ul:not(:first-child) { */
+
+.main-posts li {
+  /* margin-bottom: 1.5rem !important; */
+  /* padding: 3em; */
+  /* display: none !important; */
+}
+
+
+.main-posts .wp-block-post {
+  margin-top: 0rem !important;
+  /* margin-top: 1.5rem !important; */
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.no-padding {
+  padding-left: 0 !important;
+}
+
+.tag-spacer {
+  flex-basis: 40%;
+  height: 22vw;
+  /* display: none; */
+  /* background: yellow; */
+  /* float: left; */
+}
+
+.tag-spacer>.wp-block-group {
+  display: none;
+}
+
+
+.tag-spacer .wp-block-group {}
+
+.tag-ratio-16-9 video,
+.tag-ratio-1-1 video,
+.tag-ratio-4-5 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px !important;
+
+}
+
+.tag-ratio-16-9 {
+  aspect-ratio: 16/9;
+}
+
+.tag-ratio-1-1 {
+  aspect-ratio: 1/1;
+}
+
+.tag-ratio-4-5 {
+  aspect-ratio: 4/5;
+}
+
+.tag-width-100 {
+  flex-basis: 100%;
+}
+
+.tag-width-75 {
+  /* flex-basis: 9; */
+  width: 70%;
+  flex-grow: 1;
+
+
+  /* flex-grow: 4; */
+}
+
+.tag-width-50 {
+  /* flex-basis: 2; */
+  width: 40%;
+  /* flex-grow: 9; */
+  flex-grow: 1;
+
+}
+
+.tag-width-25 {
+  /* flex-basis: 1; */
+  width: 20%;
+  flex-grow: 1;
+  /* width: ; */
+  /* flex-basis: 20%; */
+  /* margin-right: 1.4em; */
+  /* flex-grow: 1; */
+}
+
+.tag-float-left {
+  /* float: left; */
+}
+
+.tag-float-right {
+  /* float: right; */
+}
+
+
+/* .category-ps-left-big {
+  padding-right: 60px !important;
+}
+
+.category-ps-left-small {
+  padding-right: 200px !important;
+}
+
+.category-ps-right-big {}
+.ps_20_left_1-1 {
+  padding-left: 30%;
+}
+
+.category-ps-right-small {
+  padding-left: 200px !important;
+} */
+
+
+
+
+
+
+.wp-block-latest-posts__featured-image img {
+  float: left !important;
+
+}
+
+.t-feature-image {
+  position: relative !important;
+}
+
+
+.wp-block-latest-posts__post-title {
+  display: block !important;
+  position: absolute !important;
+  z-index: 4 !important;
+}
+
+
+.tag-type-bottom .ty-post-title .wp-block-post-title {
+  bottom: 1.8rem !important;
+  position: absolute;
+  line-height: .8;
+}
+
+.ty-post-title {
+  position: absolute !important;
+  width: 90%;
+  z-index: 4;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  pointer-events: none;
+}
+
+.tag-no-link .ty-post-title {
+  /* height: calc(100% - 3.6em); */
+  /* opacity: .5; */
+  /* background: blue; */
+}
+
+.no-link {
+  display: none;
+}
+
+.tag-no-link .no-link {
+  display: block;
+}
+
+.tag-no-link .linked {
+  display: none;
+}
+
+.tag-type-bottom h2.ty-post-title {
+  position: absolute !important;
+}
+
+.tag-type-bottom .ty-post-title {
+  position: absolute !important;
+  bottom: 1.5rem;
+}
+
+.tag-type-bottom .ty-post-title .taxonomy-category {
+  bottom: 0;
+}
+
+.ty-post-title .taxonomy-category {
+  /* opacity: .6; */
+  position: absolute;
+  pointer-events: all;
+  /* bottom: 0; */
+}
+
+h2.ty-post-title {
+  position: relative !important;
+  margin-left: 0 !important;
+  margin-top: 1.5rem;
+}
+
+h2.ty-post-title a {
+  color: #FFFFFF !important;
+}
+
+.ty-cat-list {
+  opacity: 50%;
+}
+
+.wp-block-group {
+  position: relative;
+}
+
+
+@media screen and (max-width:700px) {
+
+  .wp-site-blocks {
+    padding-top: 2em !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+
+  .tyso {
+    position: relative;
+    width: 15vw;
+    padding-left: 0 !important;
+  }
+
+  .tyso,
+  .intro-text {
+    padding-top: 3em;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+
+
+  .intro-text {
+    width: auto !important;
+  }
+
+  .t-nav {
+    bottom: auto;
+    width: auto !important;
+    float: right !important;
+    right: 1.4rem;
+  }
+
+  .t-navX .wp-container-2.wp-container-2,
+  .t-navX .items-justified-left,
+  .t-nav .is-content-justification-left {
+    align-items: flex-end;
+  }
+
+  .category-ps-left-big,
+  .category-ps-left-small,
+  .category-ps-right-big,
+  .category-ps-right-small {
+    padding-right: 0px !important;
+    padding-left: 0% !important;
+  }
+
+  .wp-post-image {
+    border-radius: 15px !important;
+  }
+}
